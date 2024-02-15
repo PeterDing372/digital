@@ -26,13 +26,13 @@ module control
         end
         Compute : begin
                 NS = (curr_B == 0) ? Done : Compute;
-                if (A_lt_B) begin // A - B
-                    selA = 2'b10; 
-                    selB = 2'b0;
-                end
-                else begin // swap
+                if (A_lt_B) begin // swap
                     selA = 2'b01; 
                     selB = 2'b01;
+                end
+                else begin // A - B
+                    selA = 2'b10; 
+                    selB = 2'b11;
                 end
         end // end Compute
         Done : begin 

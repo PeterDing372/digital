@@ -6,7 +6,7 @@ module chip
     output  wire    [7:0]   res,
     input   wire            ops_val,
     output  wire            ops_rdy,
-    input   wire            res_rdy, // 
+    input   wire            res_rdy, 
     output  wire            res_val);
 
     logic           clk_int, rst_b_int, ops_val_int, ops_rdy_int, res_rdy_int, res_val_int;
